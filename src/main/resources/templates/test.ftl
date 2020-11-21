@@ -5,7 +5,7 @@
     <title>销量图</title>
     <script src="js/echarts.js"></script>
     <script src="js/china.js"></script>
-    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>                          
 
     <style>
         *{margin:0;padding:0}
@@ -32,7 +32,7 @@ $(document).ready(function () {
     //AJAX接收数据主体
     $.ajax({
         type:"GET",
-        url:"/getdata",
+        url:"Charts/getdata",
         dataType:"json",
         async:false,
         success:function (result) {
